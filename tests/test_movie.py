@@ -1,7 +1,7 @@
 import unittest
-from models import movie
+from app.models import Movie
 
-Movie = movie.Movie
+
 
 class MovieTest(unittest.TestCase):
     '''
@@ -24,6 +24,3 @@ class MovieTest(unittest.TestCase):
         self.assertEqual(self.new_movie.poster,'https://image.tmdb.org/t/p/w500/'+ 'https://image.tmdb.org/t/p/w500/khsjha27hbs')
 
 
-
-if __name__ =='__main__':
-    unittest.main()
